@@ -21,7 +21,7 @@ ENV APP_HOME /app
 WORKDIR $APP_HOME
 
 # Copy local code to the container image.
-COPY . ./
+COPY nginx ./
 
 # Ensure the script is executable
 RUN chmod +x /app/gcsfuse_run.sh
